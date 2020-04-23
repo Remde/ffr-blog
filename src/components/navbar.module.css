@@ -4,6 +4,7 @@
   width: 100vw;
   height: 9vh;
   max-width: 100%;
+  transition: top 0.3s;
   top: 0;
   display: flex;
   justify-content: center;
@@ -14,7 +15,6 @@
 
 .navbar a {
   color: #747C81;
-  height: 60%;
   width: 8%;
   text-align: center;
   margin: 0px 20px 0px 20px;

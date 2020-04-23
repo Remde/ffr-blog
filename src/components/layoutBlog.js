@@ -12,7 +12,7 @@ const Layout = ({ location, title, children }) => {
   let header
 
 
-    header = ( 
+    header = (
       <h3
         style={{
           marginTop: 80,

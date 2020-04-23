@@ -9,6 +9,10 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
+  if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#projects-section"]')
+  }
   //if (location.pathname === rootPath) {
     header = (<Navbar />)/*(
       <h1

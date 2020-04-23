@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import containerStyles from "./navbar.module.css"
+import Helmet from "react-helmet"
+import { withPrefix, Link } from "gatsby"
 
 
 export default () =>
