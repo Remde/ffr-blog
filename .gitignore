@@ -67,3 +67,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# linguist
+*.css linguist-detectable=false
+*.html linguist-detectable=false
