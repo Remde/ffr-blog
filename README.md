@@ -5,5 +5,4 @@
 
 Portfolio containing my blog, some projects and info about me. You can visit it at http://fernandoremde.com
 
-Made using Gatsby (React)
-Deployed to my server using Git 
+Made using Gatsby (React) and deployed in my Linux server with nginx.
