@@ -5,13 +5,14 @@ import { rhythm, scale } from "../utils/typography"
 
 import Navbar from "./navbar"
 import Footer from "./footer"
+import Social from "./social"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
 
-    header = ( //dae man bota o header do site aquizao papai
+    header = ( 
       <h3
         style={{
           marginTop: 80,
@@ -36,6 +37,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
 
     </div>
+    <Social />
     <Footer />
     </div>
   )

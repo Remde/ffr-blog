@@ -5,8 +5,8 @@ import containerStyles from "./navbar.module.css"
 
 export default () =>
 <div className={containerStyles.navbar}>
-  <Link to="/">home</Link>
-  <Link to="#projects-section">projects</Link>
-  <Link to="#about-section">about</Link>
-  <Link to="/blog">blog</Link>
+  <Link to="/" activeStyle={{ color: "black" }}>home</Link>
+  <Link to="#projects-section" activeStyle={{ color: "black" }}>projects</Link>
+  <Link to="#about-section" activeStyle={{ color: "black" }}>about</Link>
+  <Link to="/blog" activeStyle={{ color: "black" }} partiallyActive={true}>blog</Link>
 </div>

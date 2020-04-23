@@ -4,7 +4,7 @@ import containerStyles from "./projects.module.css"
 import Projectimg from "../images/projectImg.png"
 
 export default () =>
-<div className={containerStyles.projects}>
+<div className={containerStyles.projects} id="projects-section">
 
   <div className={containerStyles.projectsItem}>
     <Link to="/"><img src={Projectimg} alt="Project 1" /></Link>
