@@ -71,3 +71,4 @@ yarn-error.log
 # linguist
 *.css linguist-detectable=false
 *.html linguist-detectable=false
+*.htm linguist-detectable=false
