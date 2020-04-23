@@ -1,0 +1,34 @@
+.navbar {
+  position: fixed;
+  background: #DCE1E3;
+  width: 100vw;
+  height: 9vh;
+  max-width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-x: hidden;
+  box-shadow: 0px 3px 6px #0000001F;
+}
+
+.navbar a {
+  color: #747C81;
+  height: 60%;
+  width: 8%;
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+
+.navbar a:link {
+  color: #747C81;
+  text-decoration: none;
+
+}
+
+.navbar a:visited {
+  color: #747C81;
+  text-decoration: none;
+
+}

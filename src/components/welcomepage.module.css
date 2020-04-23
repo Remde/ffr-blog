@@ -1,0 +1,29 @@
+.welcomeSection {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background: #747C81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainText {
+  color: white;
+  font-size: 3.3em;
+  font-family: 'Roboto Condensed';
+}
+
+.subText {
+  margin-top: -25px;
+  font-size: 1.1em;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Condensed';
+}
+
+.subText a {
+  color: #DADEE0;
+  text-decoration: none;
+}

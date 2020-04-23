@@ -1,21 +1,55 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
+import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
+import Navbar from "../components/navbar"
+import Welcomepage from "../components/welcomepage"
+import Projects from "../components/projects"
+import Social from "../components/social"
+import Footer from "../components/footer"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
 
-export default IndexPage
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
+
+  return (
+    <Layout location={location} title={siteTitle}>
+      <Navbar />
+      <Welcomepage />
+      <Projects />
+      <Social />
+      <Footer />
+    </Layout>
+  )
+}
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
