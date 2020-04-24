@@ -15,7 +15,7 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          marginTop: 80,
+          marginTop: 40,
           textAlign: 'left',
           fontSize: 50,
         }}

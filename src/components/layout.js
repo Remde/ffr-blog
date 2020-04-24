@@ -7,14 +7,14 @@ import Navbar from "./navbar"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  //let header
 
   if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
     require("smooth-scroll")('a[href*="#projects-section"]')
   }
   //if (location.pathname === rootPath) {
-    header = (<Navbar />)/*(
+    /*header = (<Navbar />)/*(
       <h1
         style={{
           ...scale(1.5),
@@ -63,7 +63,6 @@ const Layout = ({ location, title, children }) => {
       //  padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
       <main>{children}</main>
 
     </div>

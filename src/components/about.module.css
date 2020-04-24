@@ -1,0 +1,38 @@
+.aboutPage {
+  min-height: 78vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContainer {
+  height: 60%;
+  min-width: 60%;
+  max-width: 80%;
+}
+
+.aboutContainer p{
+  color: #747C81;
+  text-indent: 40px;
+  margin: 0;
+}
+
+.aboutContainer a{
+  color: #747C81;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutContainer {
+    margin-bottom: 100px;
+  }
+  .aboutPage {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+  .aboutContainer {
+    margin-top: 50px;
+  }
+}
