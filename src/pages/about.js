@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Home" />
+      <SEO title="About" />
       <Navbar />
       <About />
       <Social />

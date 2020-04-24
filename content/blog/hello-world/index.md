@@ -1,22 +1,17 @@
 ---
-title: Hello World qual ofi
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World qual foi"
+title: Blogging is Back
+date: "2020-01-17T22:12:03.284Z"
+description: "And now it loads all pages at once!"
 ---
 
-This is my first post on my new fake blog! How exciting!
 
-I'm sure I'll write a lot more interesting things in the future.
+<p>It's crazy that I own this domain since I was 16 — six years ago. At the time it started as a blog, too, but a
+Wordpress blog with short stories and poems. I wouldn't show it to anyone, but nevertheless it ended up being the basis for a few lyrics of songs that I wrote in the past years. (Hope I can talk about music here, too).
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+<h3>Goals moving forward</h3>
+The main focus of this new iteration, however, is to have a more "serious" note to it, to document projects, talk about programming, technology, finance, etc. I love all kinds of art and I would never leave it out of any project of mine, but when I eventually write about it here it will have a bit more of an analytical, introspective tone to it.</p>
+<p>Unfortunately there won't be short stories and poems! It's still a thing for me — I guess so at least, haven't written any in a while — but it still is more of a private, me-alone thing.</p>
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
-
-![Chinese Salty Egg](./salty_egg.jpg)
+<h3>About the technology</h3>
+I have written this everywhere in the last days, but I finally settled for Gatsby which uses the React framework for front-end and generates these awesome static pages. I am also paying for a 5$ a month DigitalOcean droplet, which I strongly recommend, as my server to deploy to. They have amazing guides for everything as well, which is great. I was already familiar with hosting and remote servers (any Minecraft ex-addicts?), but even then the guides came in very handy. Excellent service.
+</p>
