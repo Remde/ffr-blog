@@ -16,10 +16,41 @@ img.center {
   margin: 0 auto;
 }
 
-.link {
+.github {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 35px;
   width: 45px;
   height: 45px;
+  background: url("../images/github.svg");
+}
+
+.github:hover {
+  background: url("../images/github_hover.svg") no-repeat;
+}
+
+.mail {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  width: 45px;
+  height: 45px;
+  background: url("../images/mail.svg");
+}
+
+.mail:hover {
+  background: url("../images/mail_hover.svg") no-repeat;
+}
+
+.linkedin {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  width: 45px;
+  height: 45px;
+  background: url("../images/linkedin.svg");
+}
+
+.linkedin:hover {
+  background: url("../images/linkedin_hover.svg") no-repeat;
 }

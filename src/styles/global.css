@@ -6,9 +6,11 @@ html {
   background-color: #F7F7F7;
   font-family: 'Roboto Condensed';
   margin: 0;
+  font-weight: 400;
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
  -webkit-text-size-adjust: 100%;
+
 }
 
 body {

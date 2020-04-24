@@ -6,27 +6,33 @@ import Projectimg from "../images/projectImg.png"
 export default () =>
 <div className={containerStyles.projects} id="projects">
 
+
   <div className={containerStyles.projectsItem}>
-    <Link to="/"><img src={Projectimg} alt="Project 1" /></Link>
+  <a href="https://github.com/Remde/fernandoremde-website" target="_blank">
+    <img src={Projectimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
       <h2>website and blog</h2>
-      <p>fernandoremde.com is an open source responsive website made with the React framework and the static pages are built using Gatsby.</p>
+      <p>fernandoremde.com is an open source responsive website made with the React framework and built using Gatsby.</p>
     </div>
+  </a>
   </div>
 
+
   <div className={containerStyles.projectsItem}>
-    <Link to="/"><img src={Projectimg} alt="Project 1" /></Link>
+  <a href="https://github.com/Remde/BTOWEEN" target="_blank">
+    <img src={Projectimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
-      <h2>note player</h2>
+      <h2>music player</h2>
       <p>BTOWEEN is a music player made with Java in which you can specify musical notes in the key of C and it plays back to you.</p>
     </div>
+  </a>
   </div>
 
   <div className={containerStyles.projectsItem}>
     <Link to="/"><img src={Projectimg} alt="Project 1" /></Link>
     <div className={containerStyles.projectsItemText}>
       <h2>project title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec bibendum nulla. Nulla nulla nunc, elementum pharetra blandit ut, ornare in ex. In hac habitasse platea dictumst.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec bibendum nulla.</p>
     </div>
   </div>
 
@@ -34,7 +40,7 @@ export default () =>
     <Link to="/"><img src={Projectimg} alt="Project 1" /></Link>
     <div className={containerStyles.projectsItemText}>
       <h2>project title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nibh diam, vel venenatis leo sodales eget. Vestibulum a magna dui. Nunc efficitur et dolor eu imperdiet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
 

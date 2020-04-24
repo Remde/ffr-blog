@@ -6,6 +6,8 @@ import Layoutblog from "../components/layoutblog"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
+
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -17,7 +19,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article style={{
+        boxShadow: `0px 3px 6px #0000001A`,
+        borderRadius: 6,
+        margin: `30px 30px 30px 30px`,
+        padding: `30px 30px 10px 30px`,
+        backgroundColor: `white`,
+        color: `#747C81`,
+      }}>
         <header>
           <h1
             style={{

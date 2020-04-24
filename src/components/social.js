@@ -4,21 +4,26 @@ import containerStyles from "./social.module.css"
 import Git from "../images/github.svg"
 import Linkedin from "../images/linkedin.svg"
 import Mail from "../images/mail.svg"
+import Githover from "../images/github_hover.svg"
+import Linkedinhover from "../images/linkedin_hover.svg"
+import Mailhover from "../images/mail_hover.svg"
 
 
 export default () =>
 <div className={containerStyles.about} id="social-section">
 
-  <div className={containerStyles.link}>
-    <a href="https://github.com/Remde"><img className={containerStyles.center} src={Git} alt="Github" /></a>
-  </div>
+  <a href="https://www.github.com/Remde" target="_blank">
+    <div className={containerStyles.github}>
+    </div>
+  </a>
 
-  <div className={containerStyles.link}>
-    <a href="mailto:ffremde@gmail.com"><img className={containerStyles.center} src={Mail} alt="Email" /></a>
-  </div>
+  <a href="mailto:ffremde@gmail.com">
+    <div className={containerStyles.mail}>
+    </div>
+  </a>
 
-  <div className={containerStyles.link}>
-    <a href="https://www.linkedin.com/in/fernando-remde-291a641a6/"><img className={containerStyles.center} src={Linkedin} alt="LinkedIn" /></a>
-  </div>
-
+  <a href="https://www.linkedin.com/in/fernando-remde-291a641a6/" target="_blank">
+    <div className={containerStyles.linkedin}>
+    </div>
+  </a>
 </div>
