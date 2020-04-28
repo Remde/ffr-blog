@@ -1,13 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layoutblog from "../components/layoutBlog"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
 
 
 

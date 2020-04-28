@@ -1,12 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import containerStyles from "./social.module.css"
-import Git from "../images/github.svg"
-import Linkedin from "../images/linkedin.svg"
-import Mail from "../images/mail.svg"
-import Githover from "../images/github_hover.svg"
-import Linkedinhover from "../images/linkedin_hover.svg"
-import Mailhover from "../images/mail_hover.svg"
+
 
 
 export default () =>
