@@ -9,7 +9,7 @@ description: "And now it loads all pages at once!"
 Wordpress blog with short stories and poems. I wouldn't show it to anyone, but nevertheless it ended up being the basis for a few lyrics of songs that I wrote in the past years. (Hope I can talk about music here, too).
 
 <h3>Goals moving forward</h3>
-The main focus of this new iteration, however, is to have a more "serious" note to it, to document projects, talk about programming, technology, finance, etc. I love all kinds of art and I would never leave it out of any project of mine, but when I eventually write about it here it will have a bit more of an analytical, introspective tone to it.</p>
+The main focus of this new iteration, however, is to have a more "serious" note to it, to document projects, talk about programming, technology, fitness, finance, etc. I love all kinds of art and I would never leave it out of any project of mine, but when I eventually write about it here it will have a bit more of an analytical, introspective tone to it.</p>
 <p>Unfortunately there won't be short stories and poems! It's still a thing for me — I guess so at least, haven't written any in a while — but it still is more of a private, me-alone thing.</p>
 
 <h3>About the technology</h3>
