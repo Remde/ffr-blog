@@ -25,8 +25,9 @@
 }
 
 .projectsItem:hover .imagem {
-  width: 110%;
-  height: 110%;
+  width: 101%;
+  height: 101%;
+  border-radius: 6px;
 }
 
 .projectsItemText {
