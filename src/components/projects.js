@@ -48,7 +48,7 @@ export default () =>
     <img className={containerStyles.imagem} src={Gardenimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
       <h2>gardn (work in progress)</h2>
-      <p>Gardn is an anonymous web message web based on React. Back-end was built using Node.js.</p>
+      <p>Gardn is an anonymous web message app based on React. Back-end was built using Node.js.</p>
     </div>
     </a>
   </div>
