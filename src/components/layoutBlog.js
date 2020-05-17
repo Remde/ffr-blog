@@ -6,6 +6,8 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 import Social from "./social"
 
+import "./layoutBlog.css"
+
 const Layout = ({ location, title, children }) => {
   let header
 
@@ -23,11 +25,8 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div><Navbar />
-    <div
+    <div className="blogPosts"
       style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >

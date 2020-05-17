@@ -47,8 +47,8 @@ export default () =>
   <a href="https://github.com/Remde/gardn" target="_blank">
     <img className={containerStyles.imagem} src={Gardenimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
-      <h2>gardn (work in progress)</h2>
-      <p>Gardn is an anonymous web message app based on React. Back-end was built using Node.js.</p>
+      <h2>gardn</h2>
+      <p>Gardn is an anonymous web message app based on React. Back-end was built using Node.js and Express.</p>
     </div>
     </a>
   </div>
