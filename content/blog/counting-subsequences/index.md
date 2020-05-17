@@ -1,5 +1,5 @@
 ---
-title: Number of distinct subsequences of string1 in string2
+title: Number of distinct subsequences of string2 in string1
 date: "2020-05-17T10:12:03.284Z"
 description: "Dynamic programming problem walkthrough"
 ---
@@ -8,7 +8,7 @@ description: "Dynamic programming problem walkthrough"
 <p>I got this problem in an interview this week and found it very interesting. Well... To be honest, at first glance, I found it intimidating.
 
 <h3>The problem</h3>
-<p>Given two strings, s1 and s2, how many times s2 is a subsequence of s1? Example:</p>
+<p>Given two strings, s1 and s2, how many subsequences of s1 are equal to s2? Example:</p>
 <p>s1 = ABCABC, s2 = ABC
 
 Answer: 4.
@@ -89,6 +89,9 @@ We finally have our final result at the end of our table. So we return it.
 ```python
 return table[len1][len2]
 ```
+
+This is O(NM) time and space solution, m and n being the length for each string.
+
 <p></p>
 <h3>Final thoughts</h3>
 
