@@ -33,16 +33,16 @@ The matches are: [s[0],s1[1],s1[2]], [s1[0],s1[1],s1[5]], [s1[0], s1[4], s1[5]],
 ```python
 len1 = len(string1)
 len2 = len(string2)
-table = [[0] * (len1 + 1) for i in range(len2 + 1)]
+table = [[0] * (len2+1) for i in range(len1+1)]
 ```
-This creates our look-up table. Using the main example, we'll have 4 columns to represent string2, "ABC", and our 7 rows for "ABCABC." Why 4 and 7 instead of 3 and 6? You have to count the base case where both strings are empty.
+This creates our look-up table. Using the main example, we'll have 4 columns to represent string2, "ABC", and our 7 rows for "ABCABC." Why 4 and 7 instead of 3 and 6? You have to count the base case when the strings are empty.
 
 ```python
-for i in range(n+1):
-    lookup[0][i] = 0
+for i in range(len1+1):
+    table[i][0] = 1
 
-for i in range(m + 1):
-    lookup[i][0] = 1
+for i in range(len2+1):
+    table[0][i] = 0
 ```
 Now we filled the first row and first column. They will look like this:
 
@@ -56,16 +56,16 @@ Now we filled the first row and first column. They will look like this:
 | B      |   1 |        |       |    |
 | C      |    1 |   |        |     |
 
-This is the base table. Take a look at it and try to comprehend. If both are empty, then there's one substring found, " " itself. If string2 is " ", the final count will always be one, since the only match will be " ". If string2 is anything but empty, however, and string1 is empty, there won't be any matches. It's easy once it clicks!
+This is the base table. Take a look at it and try to comprehend. If both are empty, then there's one substring found, " " itself. If string2 is " ", the final count will always be one, since the only match will be " ". If string2 is anything but empty, however, and string1 is empty, there won't be any matches, because obviously you won't find a string in something empty. It's easy once it clicks!
 Now let's go through the rest of the table and fill it. I will explain the logic afterwards.
 
 ```python
-for i in range(1, len1 + 1):
-  for j in range(1, len2 + 1):
-    if string1[i - 1] == string2[j - 1]:
-      table[i][j] = table[i - 1][j - 1] + table[i - 1][j]  
+for i in range(1, len1+1):
+  for j in range(1, len2+1):
+    if string1[i-1] == string2[j-1]:
+      table[i][j] = table[i-1][j-1] + table[i-1][j]  
     else:
-      table[i][j] = table[i - 1][j]
+      table[i][j] = table[i-1][j]
 ```
 I will refer to table[A1,B], for example, as the place where the first A of "ABCABC" and the B of "ABC" intersect for the purpose of clarity.
 When we go to table[A1,A], it's a match. There's an A in A1. So we add the values of the cell on top of it and the cell on top-left of it. So, for instance, when we go to table[B1,B], the result will be the sum of table[A1,B] and table[A1,A]. So, back to table[A1,A], we fill it with table[" ",A] + table[" "," "]. Thats our first if clause.
@@ -91,6 +91,34 @@ return table[len1][len2]
 ```
 
 This is O(NM) time and space solution, m and n being the length for each string.
+
+The complete code is:
+```python
+def countSubsequences(string1, string2):
+  #initialize lengths and table size
+  len1 = len(string1)
+  len2 = len(string2)
+  table = [[0] * (len2+1) for i in range(len1+1)]
+
+  #base case when str1 or str2 is empty
+  for i in range(len1+1):
+    table[i][0] = 1  
+  for i in range(len2+1):
+    table[0][i] = 0
+
+  #finish filling the table
+  for i in range(1, len1+1):
+    for j in range(1, len2+1):
+      if string1[i-1] == string2[j-1]:
+        table[i][j] = table[i-1][j-1] + table[i-1][j]  
+      else:
+        table[i][j] = table[i-1][j]
+
+  #return last element
+  return table[len1][len2]
+```
+
+
 
 <p></p>
 <h3>Final thoughts</h3>
