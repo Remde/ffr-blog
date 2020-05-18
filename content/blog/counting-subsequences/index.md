@@ -84,13 +84,13 @@ Following the algorithm, the final table will be this:
 | B             |   1  |       2       |      3        |    1  |
 | C             |    1 |        2      |      3        |   4   |
 
+Take a moment to understand this. When you look at the B column, for example, you are looking at how many times the string "AB" will have a match on string1. The first "1" in this column is in  the B row, because AB is a perfect match for AB. Then it won't change for a while, it's 1 again because it's "ABC", which there's still only one subsequence (ABc), and another 1 for "ABCA." When we get to the second B in our rows, the string1 is "ABCAB", and thus we have three matches for AB. ABcab, AbcaB, and abcAB.
+
 We finally have our final result at the end of our table. So we return it.
 
 ```python
 return table[len1][len2]
 ```
-
-This is O(NM) time and space solution, m and n being the length for each string.
 
 The complete code is:
 ```python
@@ -118,6 +118,7 @@ def countSubsequences(string1, string2):
   return table[len1][len2]
 ```
 
+This is O(NM) time and space solution, m and n being the length for each string.
 
 
 <p></p>
