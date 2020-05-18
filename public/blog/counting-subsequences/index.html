@@ -161,9 +161,9 @@ When we go to table[A1,A], it’s a match. There’s an A in A1. So we add the v
 </tr>
 </tbody>
 </table>
+<p>Take a moment to understand this. When you look at the B column, for example, you are looking at how many times the string “AB” will have a match on string1. The first “1” in this column is in  the B row, because AB is a perfect match for AB. Then it won’t change for a while, it’s 1 again because it’s “ABC”, which there’s still only one subsequence (ABc), and another 1 for “ABCA.” When we get to the second B in our rows, the string1 is “ABCAB”, and thus we have three matches for AB. ABcab, AbcaB, and abcAB.</p>
 <p>We finally have our final result at the end of our table. So we return it.</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">return</span> table<span class="token punctuation">[</span>len1<span class="token punctuation">]</span><span class="token punctuation">[</span>len2<span class="token punctuation">]</span></code></pre></div>
-<p>This is O(NM) time and space solution, m and n being the length for each string.</p>
 <p>The complete code is:</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">countSubsequences</span><span class="token punctuation">(</span>string1<span class="token punctuation">,</span> string2<span class="token punctuation">)</span><span class="token punctuation">:</span>
   <span class="token comment">#initialize lengths and table size</span>
@@ -187,6 +187,7 @@ When we go to table[A1,A], it’s a match. There’s an A in A1. So we add the v
 
   <span class="token comment">#return last element</span>
   <span class="token keyword">return</span> table<span class="token punctuation">[</span>len1<span class="token punctuation">]</span><span class="token punctuation">[</span>len2<span class="token punctuation">]</span></code></pre></div>
+<p>This is O(NM) time and space solution, m and n being the length for each string.</p>
 <p></p>
 <h3>Final thoughts</h3>
 <p>That is a very hard problem to understand, but after it clicks it's really simple. I'm not sure how I feel about having this in an interview. Dynamic programming, to me, seems less about algorithmic thinking and manipulation of data and more of having an "A-HA!" moment and going from there.
