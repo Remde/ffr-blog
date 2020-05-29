@@ -11,8 +11,8 @@ export default () =>
     throughout the whole process of developing and deploying.</p>
     <p>This site was developed with the React framework using HTML, CSS (sass, flexbox), and JavaScript. The static pages were built locally with Gatsby and
    the build files were sent to my Linux remote server using Git and deployed with nginx webserver. You can find the
-    code at the <a href="https://github.com/Remde" target="_blank">Github repository</a>.</p>
-    <p>You can also find me at <a href="https://www.twitter.com/fernandoremde" target="_blank">Twitter</a>, <a href="https://www.facebook.com/fernando.remde" target="_blank">Facebook</a>, <a href="https://www.last.fm/user/nandoremde" target="_blank">Last.fm</a>, as
+    code at the <a href="https://github.com/Remde" rel="noopener noreferrer" target="_blank">Github repository</a>.</p>
+    <p>You can also find me at <a href="https://www.twitter.com/fernandoremde" rel="noopener noreferrer" target="_blank">Twitter</a>, <a href="https://www.facebook.com/fernando.remde" rel="noopener noreferrer" target="_blank">Facebook</a>, <a href="https://www.last.fm/user/nandoremde" rel="noopener noreferrer" target="_blank">Last.fm</a>, as
     well as on the image links below, which you have probably already seen.
 </p><br />
     <p>Thanks for visiting.</p>

@@ -1,7 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
 import containerStyles from "./projects.module.css"
-import Projectimg from "../images/projectImg.png"
 import Picsimg from "../images/cars.png"
 import Blogimg from "../images/blog.png"
 import Noteimg from "../images/note.png"
@@ -12,7 +10,7 @@ export default () =>
 
 
   <div className={containerStyles.projectsItem}>
-  <a href="https://github.com/Remde/fernandoremde-website" target="_blank">
+  <a href="https://github.com/Remde/fernandoremde-website" rel="noopener noreferrer" target="_blank">
     <img className={containerStyles.imagem} src={Blogimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
       <h2>website and blog</h2>
@@ -24,7 +22,7 @@ export default () =>
 
 
   <div className={containerStyles.projectsItem}>
-  <a href="https://github.com/Remde/BTOWEEN" target="_blank">
+  <a href="https://github.com/Remde/BTOWEEN" rel="noopener noreferrer" target="_blank">
     <img className={containerStyles.imagem} src={Noteimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
       <h2>music player</h2>
@@ -34,7 +32,7 @@ export default () =>
   </div>
 
   <div className={containerStyles.projectsItem}>
-  <a href="https://github.com/Remde/react-pics" target="_blank">
+  <a href="https://github.com/Remde/react-pics" rel="noopener noreferrer" target="_blank">
     <img className={containerStyles.imagem} src={Picsimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
       <h2>pics search</h2>
@@ -44,7 +42,7 @@ export default () =>
   </div>
 
   <div className={containerStyles.projectsItem}>
-  <a href="https://github.com/Remde/gardn" target="_blank">
+  <a href="https://github.com/Remde/gardn" rel="noopener noreferrer" target="_blank">
     <img className={containerStyles.imagem} src={Gardenimg} alt="Project 1" />
     <div className={containerStyles.projectsItemText}>
       <h2>gardn</h2>

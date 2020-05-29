@@ -6,7 +6,7 @@ import containerStyles from "./social.module.css"
 export default () =>
 <div className={containerStyles.about} id="social-section">
 
-  <a href="https://www.github.com/Remde" target="_blank">
+  <a href="https://www.github.com/Remde" rel="noopener noreferrer" target="_blank">
     <div className={containerStyles.github}>
     </div>
   </a>
@@ -16,7 +16,7 @@ export default () =>
     </div>
   </a>
 
-  <a href="https://www.linkedin.com/in/fernando-remde-291a641a6/" target="_blank">
+  <a href="https://www.linkedin.com/in/fernando-remde-291a641a6/" rel="noopener noreferrer" target="_blank">
     <div className={containerStyles.linkedin}>
     </div>
   </a>
