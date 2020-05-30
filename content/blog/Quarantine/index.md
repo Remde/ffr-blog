@@ -12,3 +12,5 @@ description: "Is it spring already?"
 
 <h3>Studying</h3>
 <p>Not leaving the house gives me a LOT of time and incentive to study though, that's for sure. I've been keeping up with my projects, Gardn is basically ready, my website is more beautiful than ever, and I've been studying film history and how to watch and critique. It's been fun, not gonna lie, you know, except for the imminent threat of a deadly virus.
+
+Jokes aside, I miss people, going outside, and the situation is truly grim. Keep safe, everybody.
