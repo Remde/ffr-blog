@@ -14,16 +14,29 @@
 
 .navbar a {
   color: #747C81;
-  width: 8%;
   text-align: center;
-  margin: 0px 0px 0px 0px;
   text-decoration: none;
 }
 
 .navbar a:link {
   color: #747C81;
   text-decoration: none;
+}
 
+.homeLink {
+  margin: 0 20px 0 0;
+}
+
+.projectsLink {
+  margin: 0 20px 0 20px;
+}
+
+.blogLink {
+  margin: 0 20px 0 20px;
+}
+
+.aboutLink {
+  margin: 0 0 0 20px;
 }
 
 .navbar a:visited {
@@ -38,5 +51,20 @@
   }
   .navbar a {
     width: 20%;
+  }
+  .homeLink {
+    margin: 0;
+  }
+
+  .projectsLink {
+    margin: 0;
+  }
+
+  .blogLink {
+    margin: 0;
+  }
+
+  .aboutLink {
+    margin: 0;
   }
 }

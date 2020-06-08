@@ -5,8 +5,16 @@ import { Link } from "gatsby"
 
 export default () =>
 <div className={containerStyles.navbar}>
-  <Link to="/" activeStyle={{ color: "black" }}>home</Link>
-  <Link to="#projects" activeStyle={{ color: "black" }}>projects</Link>
-  <Link to="/blog" activeStyle={{ color: "black" }} partiallyActive={true}>blog</Link>
-  <Link to="/about" activeStyle={{ color: "black" }}>about</Link>
+  <div className={containerStyles.homeLink}>
+    <Link to="/" activeStyle={{ color: "black" }}>home</Link>
+  </div>
+  <div className={containerStyles.projectsLink}>
+    <Link to="#projects" activeStyle={{ color: "black" }}>projects</Link>
+  </div>
+  <div className={containerStyles.blogLink}>
+    <Link to="/blog" activeStyle={{ color: "black" }} partiallyActive={true}>blog</Link>
+  </div>
+  <div className={containerStyles.aboutLink}>
+    <Link to="/about" activeStyle={{ color: "black" }}>about</Link>
+  </div>
 </div>
