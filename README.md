@@ -6,6 +6,6 @@
 
 Portfolio containing my blog, some projects and info about me. You can visit it at http://fernandoremde.com
 
-Made using Gatsby (React) and deployed in my Linux server with nginx.
+Made using Gatsby (React) and deployed to my Linux server with nginx.
 
-I use Travis CI to test the site and make sure that all links are valid.
+I use Jest to test the site interface through snapshots and make sure that all links are valid.
