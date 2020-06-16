@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome renders correctly 1`] = `
+<div
+  className="welcomeSection"
+>
+  <div
+    className="welcomeText"
+  >
+    <h1
+      className="mainText"
+    >
+      fernando remde
+    </h1>
+    <p
+      className="subText"
+    >
+      a portfolio website. I also write 
+      <a
+        href="/blog"
+      >
+        here
+      </a>
+      .
+    </p>
+  </div>
+</div>
+`;

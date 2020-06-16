@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutBlog renders correctly 1`] = `
+<div>
+  <div
+    className="navbar"
+  >
+    <div
+      className="homeLink"
+    >
+      <a
+        href="/"
+      >
+        home
+      </a>
+    </div>
+    <div
+      className="projectsLink"
+    >
+      <a
+        href="#projects"
+      >
+        projects
+      </a>
+    </div>
+    <div
+      className="blogLink"
+    >
+      <a
+        href="/blog"
+      >
+        blog
+      </a>
+    </div>
+    <div
+      className="aboutLink"
+    >
+      <a
+        href="/about"
+      >
+        about
+      </a>
+    </div>
+  </div>
+  <div
+    className="blogPosts"
+    style={
+      Object {
+        "padding": "2.175rem 1.0875rem",
+      }
+    }
+  >
+    <header>
+      <h3
+        style={
+          Object {
+            "fontSize": 50,
+            "marginTop": 40,
+            "textAlign": "left",
+          }
+        }
+      />
+    </header>
+    <main />
+  </div>
+  <div
+    className="about"
+    id="social-section"
+  >
+    <a
+      href="https://www.github.com/Remde"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="github"
+      />
+    </a>
+    <a
+      href="mailto:ffremde@gmail.com"
+    >
+      <div
+        className="mail"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/fernando-remde-291a641a6/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="linkedin"
+      />
+    </a>
+  </div>
+  <div
+    className="footer"
+  >
+    <div
+      className="text"
+    >
+      A website made by Fernando Ferreira Remde © | ffremde@gmail.com | Porto Alegre, Brazil
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div
+  className="navbar"
+>
+  <div
+    className="homeLink"
+  >
+    <a
+      href="/"
+    >
+      home
+    </a>
+  </div>
+  <div
+    className="projectsLink"
+  >
+    <a
+      href="#projects"
+    >
+      projects
+    </a>
+  </div>
+  <div
+    className="blogLink"
+  >
+    <a
+      href="/blog"
+    >
+      blog
+    </a>
+  </div>
+  <div
+    className="aboutLink"
+  >
+    <a
+      href="/about"
+    >
+      about
+    </a>
+  </div>
+</div>
+`;

@@ -37,7 +37,14 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "2.0.4"
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.9",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "prettier": "2.0.4",
+    "react-test-renderer": "^16.13.1"
   },
   "homepage": "https://fernandoremde.com",
   "keywords": [
@@ -56,6 +63,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo 'Write tests!'"
+    "test": "jest"
   }
 }
