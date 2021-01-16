@@ -5,7 +5,7 @@ description: "Dynamic programming problem walkthrough"
 ---
 
 
-<p>I got this problem in an interview this week and found it very interesting. Well... To be honest, at first glance, I found it intimidating.
+<p>I found this problem this week and found it very interesting. Well... To be honest, at first glance, I found it intimidating.
 
 <h3>The problem</h3>
 <p>Given two strings, s1 and s2, how many subsequences of s1 are equal to s2? Example:</p>
@@ -124,5 +124,5 @@ This is O(NM) time and space solution, m and n being the length for each string.
 <p></p>
 <h3>Final thoughts</h3>
 
-<p>That is a very hard problem to understand, but after it clicks it's really simple. I'm not sure how I feel about having this in an interview. Dynamic programming, to me, seems less about algorithmic thinking and manipulation of data and more of having an "A-HA!" moment and going from there.
+<p>That is a very hard problem to understand, but after it clicks it's really simple. I'm not sure how I feel about, for instance, having this in an interview. Dynamic programming, to me, seems less about algorithmic thinking and manipulation of data and more of having an "A-HA!" moment and going from there.
 It's an interesting problem, though. I don't know how well I explained it. Probably not very! But, as I said before, it's very easy once it clicks.</p>
