@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Fernando's Website]]></title><description><![CDATA[My personal portfolio and blog]]></description><link>http://fernandoremde.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Jan 2021 16:43:29 GMT</lastBuildDate><item><title><![CDATA[Pass, the Password Manager]]></title><link>http://fernandoremde.com/blog/password-manager/</link><guid isPermaLink="false">http://fernandoremde.com/blog/password-manager/</guid><pubDate>Sun, 24 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;I have been more and more wary when it comes to making sure my data is secure. It has gotten worse, specially due to a huge breach here in Brazil that led to more than 220 million people having their information leaked. How 220 million, you may ask, if there are only 210 million brazilians? Well, even the dead now have their data as public.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Fernando's Website]]></title><description><![CDATA[My personal portfolio and blog]]></description><link>http://fernandoremde.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Jan 2021 16:57:06 GMT</lastBuildDate><item><title><![CDATA[Pass, the Password Manager]]></title><description><![CDATA[Which makes a lot of sense and works super well with github. To generate another pass, I’d just say And there it is. so I could copy with…]]></description><link>http://fernandoremde.com/blog/password-manager/</link><guid isPermaLink="false">http://fernandoremde.com/blog/password-manager/</guid><pubDate>Sun, 24 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;I have been more and more wary when it comes to making sure my data is secure. It has gotten worse, specially due to a huge breach here in Brazil that led to more than 220 million people having their information leaked. How 220 million, you may ask, if there are only 210 million brazilians? Well, even the dead now have their data public.&lt;/p&gt;
 &lt;h3&gt;Enters Pass&lt;/h3&gt;
-By accident I found out about [pass](https://www.passwordstore.org/) . It follows the Unix philosophy, which means that every password lives in a &quot;gpg encrypted whose filename is the title of the website or resource that requires the passsword.&quot; You manage it through the terminal, and it comes with out of the box support for git, so you can have all your encrypted files in a nice Github repository shared accross all the devices you need. 
+By accident, while casually reading Reddit, I found out about &lt;a href=&quot;https://www.passwordstore.org/&quot;&gt;Pass&lt;/a&gt;. It follows the Unix philosophy, which means that every password lives in a &lt;i&gt;&quot;gpg encrypted file whose filename is the title of the website or resource that requires the passsword.&quot;&lt;/i&gt; You manage it through the terminal, and it comes with out of the box support for git, so you can have all your encrypted files in a nice Github repository shared accross all the devices you need. 
 &lt;p&gt;It generates a very intuitive file tree hierarchy. For instance, my folders look something like this (retrieved using the command &quot;pass&quot;):&lt;/p&gt;
-```python
-Password Store
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Password Store
 ├── Email
 │   ├── emailnumber1@provider.com
 │   ├── emailnumber2@provider.com
@@ -14,16 +13,13 @@ Password Store
 │   └── myuser 
 ├── Important bank thing 
 │   └── myemail 
-│   └── another@thing.com
-```
-Which makes a lot of sense and works super well with github. To generate another pass, I&apos;d just say
-```
-pass generate Anotherfolder/user
-```
-And there it is. so I could copy with ```pass -c Anotherfolder/user``` to setup in the website, and when I&apos;m done I ```pass git push``` to sync everything nicely.
+│   └── another@thing.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Which makes a lot of sense and works super well with github. To generate another pass, I’d just say&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pass generate Anotherfolder/user&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And there it is. so I could copy with &lt;code class=&quot;language-text&quot;&gt;pass -c Anotherfolder/user&lt;/code&gt; to setup in the website, and when I’m done I &lt;code class=&quot;language-text&quot;&gt;pass git push&lt;/code&gt; to sync everything nicely.&lt;/p&gt;
 &lt;h3&gt;Other devices&lt;/h3&gt;
-Alright, cool. But what about my other devices? I have other computers, I have a phone, I have a tablet, I even have a _WINDOWS_.
-Well, no worries. The community is pretty rich and has come up with Android and iOS apps that work super well. I set up a SSH in my Android phone, downloaded the app, and it gets straight from my Github. You can even add sub gpg keys if you&apos;re worried about someone stealing your phone and getting that. I didn&apos;t see a need for that as it needs my fingerprint to do anything, but you have that option as well.&lt;/p&gt;
+Alright, cool. But what about my other devices? I have other computers, I have a phone, I have a tablet, gosh, I even have a &lt;i&gt;WINDOWS&lt;/i&gt;.
+Well, no worries. The community is pretty rich and has come up with Android and iOS apps that work super well. I set up a SSH in my Android phone, downloaded the app, and it gets my passwords straight from my Github. You can even add sub gpg keys if you&apos;re worried about someone stealing your phone and getting that. I didn&apos;t see a need for that as it needs my fingerprint to do anything, but you have that option as well.&lt;/p&gt;
 &lt;p&gt;Pass is also available in any Unix platform in many forms. You can find GUI versions if the command line interface isn&apos;t your thing. And if you are a Windows person, well... Maybe there&apos;s something for you too. But come on, maybe this is the perfect time to make the move to Unix.</content:encoded></item><item><title><![CDATA[2021 and Goals]]></title><link>http://fernandoremde.com/blog/2021-and-goals/</link><guid isPermaLink="false">http://fernandoremde.com/blog/2021-and-goals/</guid><pubDate>Sun, 17 Jan 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;It&apos;s been exactly one year since my first blog post here. This is a coincidence, I just noticed when I copied the first post file to use as skeleton to this one and I just had to change the year. That&apos;s cute.
 A lot of stuff happened and this got a little bit abandoned, but I feel like it is a good time to reflect on what I want to do with these projects.&lt;/p&gt;
 &lt;h3&gt;The website&lt;/h3&gt;
