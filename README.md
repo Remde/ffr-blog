@@ -4,8 +4,6 @@
 </h1>
 
 
-Portfolio containing my blog, some projects and info about me. You can visit it at http://fernandoremde.com
-
-Made using Gatsby (React) and deployed to my Linux server with nginx.
+Code for my old blog containing some projects and info about me. You can build this with Gatsby or visit my new blog at http://fremde.org
 
 I use Jest to test the site interface through snapshots and make sure that all links are valid.
